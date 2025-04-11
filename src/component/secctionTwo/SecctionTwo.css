@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.start{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding-bottom: 0;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: var(--negro);
+
+  .titleMi{
+    color:var(--blanco);
+    font-size: 5vw;
+    font-family: "Alex Brush", cursive;
+  }
+
+  .boxStart{
+    width: 40%;
+    height: 70%;
+    opacity: 2;
+    position: absolute;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.129);
+    border: solid 2px #ffffff;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mi{
+      color: var(--blanco);
+      font-size: 2vw;
+      text-align: center;
+    }
+  }
+}
+ 
+@media (max-width: 900px ){
+
+  .start{
+
+    .titleMi{
+
+      font-size: 10vw;
+      margin-bottom: -30%;
+    }
+
+    .boxStart{
+      width: 80%;
+      height: 60%;
+      
+      .mi{
+        font-size: 3vh;
+      }
+   
+      
+    }
+  }
+  
+}
+
+ 
+@media (max-width: 400px){
+
+  .start{
+
+    .titleMi{
+
+      font-size: 15vw;
+      margin-bottom: -55%;
+    }
+
+    .boxStart{
+      width: 85%;
+      height: 60%;
+      
+      .mi{
+        font-size: 2.6vh;
+      } 
+    }
+  } 
+}
+

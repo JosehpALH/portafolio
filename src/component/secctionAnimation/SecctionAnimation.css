@@ -1,0 +1,253 @@
+.SecctionAnimation {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-image: linear-gradient(to bottom, #857d7d 0%, #2e2c2c 50%, black 100%);
+
+  .ulBox {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  
+  
+    .liBox{
+      list-style: none;
+      width: 9%;
+      height: 50%;
+      background: var(--negro);
+      margin-left: 5%;
+      border-radius: 20px;
+      transition: 0.5s;
+      cursor: pointer;
+  
+      &:hover{
+        background: var(--blanco);
+        transition: 0.5s;
+      }
+  
+      .aBox{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2vw;
+        color: var(--blanco);
+        transition: 0.5s;
+  
+        &:hover{
+          color: var(--negro);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  .carruselContainer {
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.129);
+    border: solid 2px #ffffff;
+    
+    .boxCarrucel {
+      display: flex;
+      width: 200%; 
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+  
+      .slide {
+        width: 50%;
+        height: 100%;
+        flex-shrink: 0;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .vistaEstudiso{
+        justify-content: space-around;
+       
+
+        .estudios{
+
+          text-align: center;
+          font-size: 2.2vw;
+          margin: 0 5% 5% 5%;
+          color: var(--blanco);
+        }
+      }
+
+      .vistSkillset{
+        justify-content: space-around;
+
+        .skillset{
+          width: 60%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          
+          .imgSkillset{
+            width: 15%;
+          }
+          .imgSkillsetB{
+            width: 20%;
+          }
+
+        }
+
+        .framework{
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .imgSkillsetR{
+            width: 12%;
+          }
+        }
+      
+      }
+    }
+  }
+
+  .titleSecctionAnimation{
+    color: var(--blanco);
+    font-size: 3vw;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 900px){
+
+  .SecctionAnimation{
+    .ulBox {
+      .liBox{
+        width: 23%;
+        height: 50%;
+    
+        .aBox{
+          width: 100%;
+          height: 100%;
+          font-size: 3vw;
+
+        }
+      }
+    }
+
+    .carruselContainer {     
+      .boxCarrucel {
+        .vistaEstudiso{
+          .estudios{
+            font-size: 2.6vh;
+            margin: 0 5% 5% 5%;
+          }
+        }
+        .vistSkillset{
+          .skillset{
+            width: 80%;
+            
+            .imgSkillset{
+              width: 20%;
+            }
+            .imgSkillsetB{
+              width: 25%;
+            }
+  
+          }
+  
+          .framework{
+            width: 100%;
+
+  
+            .imgSkillsetR{
+              width: 17%;
+            }
+          }
+        
+        }
+      }
+    }
+
+    .titleSecctionAnimation{
+      font-size: 5vh;
+
+    }
+
+  }
+}
+
+@media (max-width: 400px){
+
+  .SecctionAnimation{
+    .ulBox {
+      .liBox{
+        width: 35%;
+        height: 50%;
+    
+        .aBox{
+          width: 100%;
+          height: 100%;
+          font-size: 4vw;
+
+        }
+      }
+    }
+
+    .carruselContainer {
+      .boxCarrucel {
+        .vistaEstudiso{
+          .estudios{
+            text-align: center;
+            font-size: 2.1vh;
+            margin: 0 5% 5% 5%;
+            color: var(--blanco);
+          }
+        }
+        .vistSkillset{
+          .skillset{
+            width: 80%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+            .imgSkillset{
+              width: 30%;
+            }
+            .imgSkillsetB{
+              width: 35%;
+            }
+  
+          }
+  
+          .framework{
+            width: 100%;
+          
+  
+            .imgSkillsetR{
+              width: 27%;
+            }
+          }
+        
+        }
+      }
+    }
+
+    .titleSecctionAnimation{
+      font-size: 4vh;
+
+    }
+
+  }
+}
