@@ -112,7 +112,7 @@
       flex-direction: column;
       transform: translateY(-100%);
       transition: transform 0.8s ease-in-out;
-      background-color: rgba(207, 200, 200, 0.129);
+      background: var(--negro);
       border: solid 2px #ffffff;
       border-bottom-left-radius: 50px;
       border-bottom-right-radius: 50px;

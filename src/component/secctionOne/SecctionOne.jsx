@@ -17,7 +17,7 @@ export const SecctionOne = () => {
           <div className='cuatro'></div>
           <div className='cinco'></div>
           <div className='seis'></div>
-          <div className='siete'></div>
+          <div className='siete'></div> 
 
         </div>
     </section>
