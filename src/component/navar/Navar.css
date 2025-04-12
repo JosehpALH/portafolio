@@ -8,8 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 20px;
   position: relative;
+
+
 
   .boxLogo {
     height: 60%;
@@ -40,6 +41,7 @@
   align-items: center;
   justify-content: space-around;
   z-index: 3;
+  overflow-x: hidden;
  
 
   .li{
@@ -97,52 +99,72 @@
 
 
 @media (max-width: 900px) {
-  .ul {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    width: 30%;
-    height: 150%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 5;
-    margin-top: 15%;
+
+
+  .navar{
+   
+    .ul {
+      
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      transform: translateY(-100%);
+      transition: transform 0.8s ease-in-out;
+      background-color: rgba(207, 200, 200, 0.129);
+      border: solid 2px #ffffff;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      z-index: 4;
     
 
+    
 
-    .li{
-      width: 100%;
-      height: 10%;
-     
-  
-      &:hover{
-        background: transparent;
-      }
-      
-      .a{
-        width: 90%;
+      .li{
+        padding-top:50px ;
+        margin-bottom: 50px;
+        width: 100%;
         height: 10%;
-        font-size: 3vw;
-        
-        
-        &:hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+    
+        &:hover{
           background: transparent;
-          color: var(--blanco);
+        }
+        
+        .a{
+
+          width: auto;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+         
+          font-size: 5vw;
+          font-weight: 700;
+          
+          
+          &:hover {
+            background: transparent;
+            color: var(--blanco);
+          }
         }
       }
     }
   }
 
   .inputMenu:checked ~ .ul {
+    display: block;
     transform: translateX(0%);
   }
 
   .hamburger {
     display: flex;
     margin-left: 30%;
+
   }
 
   .inputMenu:checked + .hamburger .linea:nth-child(1) {
@@ -155,6 +177,7 @@
 
   .inputMenu:checked + .hamburger .linea:nth-child(3) {
     transform: translateY(-10px) rotate(-45deg);
+   
   }
 
  
@@ -162,12 +185,13 @@
 
 @media (max-width: 400px){
   .ul{
-    width: 45%;
-    margin-top: 20%;
+    
+    width: 20%;
+
 
     .li{
       .a{
-        font-size: 5vw;
+        font-size: 4vw;
       }
     }
   }

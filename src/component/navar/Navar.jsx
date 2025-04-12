@@ -14,7 +14,8 @@ export const Navar = () => {
       </div>
 
       <input type="checkbox" id="toggle" class="inputMenu" />
-      <label for="toggle" class="hamburger">
+
+      <label for="toggle" className="hamburger">
         <span class="linea"></span>
         <span class="linea"></span>
         <span class="linea"></span>
@@ -30,7 +31,7 @@ export const Navar = () => {
         <li class="li"><a class="a" href="https://wa.me/51932576707?text=¡Hola!%20Quiero%20hablar%20contigo%20por%20WhatsApp"
     target="_blank"
     rel="noopener noreferrer">whatsapp</a></li>
-      </ul>
+      </ul>   
   </nav>
   )
 }
